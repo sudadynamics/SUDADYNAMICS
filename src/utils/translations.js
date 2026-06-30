@@ -6,7 +6,7 @@ export const translations = {
     navContact: "İletişime Geç",
     heroTitlePrefix: "Suda Dynamics ile ",
     heroTitleHighlight: "Geleceği İnşa Edin",
-    heroSubtitle: "İleri düzey otomasyon, entegrasyon, mobil ve web çözümleri ile işletmenizi dijital dünyada zirveye taşıyoruz. Kusursuz kod, hızlı entegrasyon ve göz alıcı arayüzler sunuyoruz.",
+    heroSubtitle: "İleri düzey otomasyon, entegrasyon, mobil ve web çözümleri ile işletmenizi dijital dünyada zirveye taşıyoruz. Kusursuz kod, hızlı entegrasyon ve göz alıcı arayüzler sunuyoruz. En geç 2 hafta içinde projenizi çalışır durumda teslim alırsınız.",
     heroCTA1: "Hemen İletişime Geç",
     heroCTA2: "Hizmetlerimizi İncele",
     statProjects: "Başarılı Proje",
@@ -17,7 +17,7 @@ export const translations = {
     servicesSubtitle: "İhtiyaçlarınıza özel, yüksek performanslı ve modern teknolojilerle üretilmiş çözümler sunuyoruz.",
     serviceDetailBtn: "Detayları Gör",
     serviceDetailCTA: "Bu Hizmet Hakkında Teklif Al",
-    calculatorTitle: "Proje Maliyet Hesaplayıcı",
+    calculatorTitle: "Proje Süre Hesaplayıcı",
     calculatorField1: "Proje Tipi",
     calculatorField2: "Platform Sayısı",
     calculatorField3: "Ek Özellikler",
@@ -36,12 +36,56 @@ export const translations = {
     popupSubmitCall: "Telefonla Ara",
     teamTitle: "Uzman Kadromuz",
     teamSubtitle: "Suda Dynamics'in arkasındaki, fikirleri gerçeğe dönüştüren dinamik çekirdek kadro.",
-    footerText: "Suda Dynamics, her türlü otomasyon, entegrasyon, mobil ve web işlerinizi profesyonel standartlarda hayata geçiren yeni nesil yazılım şirketidir.",
+    footerText: "Suda Dynamics, otomasyon, entegrasyon, mobil ve web işlerinizi maksimum 2 haftada profesyonel standartlarda hayata geçiren yeni nesil yazılım şirketidir.",
     footerRights: "Her Hakkı Saklıdır.",
     toastSuccess: "Tebrikler! WhatsApp'a yönlendiriliyorsunuz.",
     toastError: "Lütfen tüm zorunlu alanları doldurun.",
     darkMode: "Koyu Tema",
     lightMode: "Açık Tema",
+
+    // Workflow Section
+    workflowTitle: "Çalışma Sürecimiz",
+    workflowSubtitle: "Fikirlerinizi en geç 2 hafta içinde eksiksiz teslim etmemizi sağlayan çevik adımlarımız.",
+    workflowSteps: [
+      {
+        title: "1. Analiz & Keşif",
+        desc: "İhtiyaçlarınızı analiz edip yol haritasını ve teknik yapıyı hemen belirliyoruz.",
+        time: "1-2 Gün"
+      },
+      {
+        title: "2. Çevik Geliştirme",
+        desc: "Modüler mimari ve premium tasarımlarla projenizin kodlamasını hızla tamamlıyoruz.",
+        time: "3-7 Gün"
+      },
+      {
+        title: "3. Entegrasyon & Test",
+        desc: "Sistemlerinizi bağlayıp performans, mobil uyumluluk ve güvenlik testlerini gerçekleştiriyoruz.",
+        time: "2-3 Gün"
+      },
+      {
+        title: "4. Teslimat & Yayına Alım",
+        desc: "Projenizi hatasız şekilde yayına alıyor ve tüm dökümanlarıyla teslim ediyoruz.",
+        time: "1 Gün"
+      }
+    ],
+
+    // Why Us Section
+    whyUsTitle: "Neden Suda Dynamics?",
+    whyUsSubtitle: "Hızlı, kararlı ve yüksek performanslı çözümlerimizle fark yaratıyoruz.",
+    whyUsCards: [
+      {
+        title: "Maksimum 2 Hafta Teslim",
+        desc: "İşinizin beklemeye tahammülü olmadığını biliyoruz. Tüm otomasyon, web ve mobil projelerimizi en geç 14 gün içerisinde tamamlanmış olarak sunuyoruz."
+      },
+      {
+        title: "Uçtan Uca Entegrasyon",
+        desc: "ERP, CRM, muhasebe veya ödeme sistemlerinizi kesintisiz ve veri kaybı riski olmadan birbirine bağlıyoruz."
+      },
+      {
+        title: "Göz Alıcı Arayüz Tasarımı",
+        desc: "Modern animasyonlarla süslenmiş, kullanıcıyı içine çeken estetik ve hızlı arayüzler geliştiriyoruz."
+      }
+    ],
     
     // Services Detail Content
     servicesData: [
@@ -126,7 +170,7 @@ export const translations = {
     navContact: "Contact Us",
     heroTitlePrefix: "Build the Future with ",
     heroTitleHighlight: "Suda Dynamics",
-    heroSubtitle: "We boost your business in the digital space with high-level automation, integration, mobile, and web solutions. We offer seamless code, fast integration, and eye-catching user interfaces.",
+    heroSubtitle: "We boost your business in the digital space with high-level automation, integration, mobile, and web solutions. We offer seamless code, fast integration, and eye-catching user interfaces. Your project is delivered in 2 weeks maximum.",
     heroCTA1: "Contact Now",
     heroCTA2: "Explore Services",
     statProjects: "Successful Projects",
@@ -137,7 +181,7 @@ export const translations = {
     servicesSubtitle: "We offer custom, high-performance solutions built with modern technologies tailored to your needs.",
     serviceDetailBtn: "See Details",
     serviceDetailCTA: "Get a Quote for this Service",
-    calculatorTitle: "Project Cost Calculator",
+    calculatorTitle: "Project Timeline Calculator",
     calculatorField1: "Project Type",
     calculatorField2: "Number of Platforms",
     calculatorField3: "Additional Features",
@@ -156,12 +200,56 @@ export const translations = {
     popupSubmitCall: "Call Directly",
     teamTitle: "Our Expert Team",
     teamSubtitle: "The dynamic core team behind Suda Dynamics, turning ideas into reality.",
-    footerText: "Suda Dynamics is a next-generation software agency that brings all your automation, integration, mobile, and web projects to life with professional standards.",
+    footerText: "Suda Dynamics is a next-generation software agency that brings your automation, integration, mobile, and web projects to life within a maximum of 2 weeks.",
     footerRights: "All Rights Reserved.",
     toastSuccess: "Congratulations! Redirecting to WhatsApp.",
     toastError: "Please fill in all required fields.",
     darkMode: "Dark Mode",
     lightMode: "Light Mode",
+
+    // Workflow Section
+    workflowTitle: "Our Process",
+    workflowSubtitle: "Our agile steps that ensure we deliver your ideas complete within 2 weeks maximum.",
+    workflowSteps: [
+      {
+        title: "1. Analysis & Discover",
+        desc: "We analyze your requirements and define the roadmap and architecture immediately.",
+        time: "1-2 Days"
+      },
+      {
+        title: "2. Agile Development",
+        desc: "We rapidly complete the coding of your project using modular architectures and premium designs.",
+        time: "3-7 Days"
+      },
+      {
+        title: "3. Integration & Testing",
+        desc: "We connect your systems and execute performance, responsiveness, and security tests.",
+        time: "2-3 Days"
+      },
+      {
+        title: "4. Deployment & Handover",
+        desc: "We publish your project bug-free and hand it over with comprehensive documentation.",
+        time: "1 Day"
+      }
+    ],
+
+    // Why Us Section
+    whyUsTitle: "Why Suda Dynamics?",
+    whyUsSubtitle: "We make a difference with our rapid, robust, and high-performance solutions.",
+    whyUsCards: [
+      {
+        title: "Max 2 Weeks Delivery",
+        desc: "We know your business cannot wait. We deliver all automation, web, and mobile projects complete within 14 days maximum."
+      },
+      {
+        title: "End-to-End Integration",
+        desc: "We connect your ERP, CRM, accounting, or payment gateways seamlessly without any data loss risk."
+      },
+      {
+        title: "Stunning UI Design",
+        desc: "We build aesthetic, high-speed interfaces decorated with fluid modern animations that captivate users."
+      }
+    ],
 
     // Services Detail Content
     servicesData: [
@@ -186,7 +274,7 @@ export const translations = {
         icon: "Smartphone",
         title: "Mobile App Development",
         shortDesc: "Innovative mobile apps delivering high performance on iOS and Android.",
-        fullDesc: "We develop fluid, modernly designed, and high-performance apps for both iOS and Android using modern cross-platform tech (React Native, Flutter). With user-friendly UX and powerful backend systems, we launch your app to success on App Store & Play Store.",
+        fullDesc: "We develop fluid, modernly designed, and high-performance apps for both iOS and Android using modern cross-platform tech (React Native, Flutter). With user-friendly UX and powerful background architecture, we launch your app to success on App Store & Play Store.",
         techs: ["React Native", "Flutter", "iOS & Android", "Firebase", "App Store & Play Store", "Push Notifications"]
       },
       {

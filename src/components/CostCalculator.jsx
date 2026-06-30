@@ -2,27 +2,33 @@ import React, { useState } from 'react';
 import { X, Cpu, GitMerge, Smartphone, Globe, Calendar, ArrowRight, ShieldAlert, Sparkles } from 'lucide-react';
 import './CostCalculator.css';
 
-const CostCalculator = ({ isOpen, onClose, t }) => {
+const CostCalculator = ({ isOpen, onClose, t, lang }) => {
   const [projectType, setProjectType] = useState('web');
   const [scale, setScale] = useState('medium');
   const [urgency, setUrgency] = useState('normal');
 
   if (!isOpen) return null;
 
-  // Simple logic to calculate dynamic timelines
+  // Simple logic to calculate dynamic timelines (maximum 14 days / 2 weeks)
   const getTimeline = () => {
-    let weeks = 2;
-    if (projectType === 'mobile') weeks += 3;
-    if (projectType === 'automation') weeks += 1;
-    if (projectType === 'integration') weeks += 2;
+    let days = 7;
+    if (projectType === 'web') days = 7;
+    if (projectType === 'mobile') days = 11;
+    if (projectType === 'automation') days = 6;
+    if (projectType === 'integration') days = 5;
 
-    if (scale === 'small') weeks = Math.max(1, weeks - 1);
-    if (scale === 'enterprise') weeks += 4;
+    if (scale === 'small') days = Math.round(days * 0.6);
+    if (scale === 'enterprise') days = Math.round(days * 1.3);
 
-    if (urgency === 'fast') weeks = Math.max(1, Math.round(weeks * 0.7));
-    if (urgency === 'immediate') weeks = Math.max(1, Math.round(weeks * 0.5));
+    if (urgency === 'fast') days = Math.round(days * 0.75);
+    if (urgency === 'immediate') days = Math.round(days * 0.5);
 
-    return weeks;
+    return Math.max(1, Math.min(14, days));
+  };
+
+  const getTimelineString = () => {
+    const days = getTimeline();
+    return lang === 'tr' ? `${days} Gün` : `${days} Days`;
   };
 
   const getEstCost = () => {
@@ -48,13 +54,13 @@ const CostCalculator = ({ isOpen, onClose, t }) => {
   };
 
   const handleWhatsAppSend = () => {
-    const timeline = getTimeline();
+    const timelineStr = getTimelineString();
     const costRating = getEstCost();
     const msg = `*Suda Dynamics Proje Fiyat Hesaplaması* \n\n` +
                 `*Proje Tipi:* ${getTypeName()}\n` +
                 `*Proje Ölçeği:* ${scale.toUpperCase()}\n` +
                 `*Termin Önceliği:* ${urgency.toUpperCase()}\n` +
-                `*Tahmini Süre:* ~${timeline} Hafta\n` +
+                `*Tahmini Süre:* ~${timelineStr}\n` +
                 `*Yoğunluk Derecesi:* ${costRating}\n\n` +
                 `Merhaba, bu detaylara uygun bir teklif almak istiyoruz. Bizimle iletişime geçebilir misiniz?`;
                 
@@ -171,7 +177,7 @@ const CostCalculator = ({ isOpen, onClose, t }) => {
                 <Calendar className="result-icon purple" />
                 <div>
                   <p className="result-label">Tahmini Süre</p>
-                  <p className="result-val">~ {getTimeline()} Hafta</p>
+                  <p className="result-val">~ {getTimelineString()}</p>
                 </div>
               </div>
               <div className="result-card">

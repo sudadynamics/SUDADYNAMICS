@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 import ContactPopup from './components/ContactPopup';
 import CostCalculator from './components/CostCalculator';
+import Workflow from './components/Workflow';
 import { translations } from './utils/translations';
 import './App.css';
 
@@ -122,6 +123,10 @@ function App() {
           onOpenCalculator={() => setCalcOpen(true)}
         />
         
+        <Workflow 
+          t={t} 
+        />
+        
         <Team 
           t={t} 
         />
@@ -148,6 +153,7 @@ function App() {
         isOpen={calcOpen} 
         onClose={() => setCalcOpen(false)} 
         t={t} 
+        lang={lang}
       />
     </div>
   );
