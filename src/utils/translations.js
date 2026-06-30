@@ -1,0 +1,228 @@
+export const translations = {
+  tr: {
+    navHome: "Ana Sayfa",
+    navServices: "Hizmetlerimiz",
+    navTeam: "Ekibimiz",
+    navContact: "İletişime Geç",
+    heroTitlePrefix: "Suda Dynamics ile ",
+    heroTitleHighlight: "Geleceği İnşa Edin",
+    heroSubtitle: "İleri düzey otomasyon, entegrasyon, mobil ve web çözümleri ile işletmenizi dijital dünyada zirveye taşıyoruz. Kusursuz kod, hızlı entegrasyon ve göz alıcı arayüzler sunuyoruz.",
+    heroCTA1: "Hemen İletişime Geç",
+    heroCTA2: "Hizmetlerimizi İncele",
+    statProjects: "Başarılı Proje",
+    statSatisfaction: "Müşteri Memnuniyeti",
+    statUptime: "Sistem Aktiflik Oranı",
+    statDevelopers: "Uzman Geliştirici",
+    servicesTitle: "Hizmet Alanlarımız",
+    servicesSubtitle: "İhtiyaçlarınıza özel, yüksek performanslı ve modern teknolojilerle üretilmiş çözümler sunuyoruz.",
+    serviceDetailBtn: "Detayları Gör",
+    serviceDetailCTA: "Bu Hizmet Hakkında Teklif Al",
+    popupTitle: "Bizimle İletişime Geçin",
+    popupSubtitle: "Projenizi konuşalım! Formu doldurarak veya doğrudan WhatsApp/Telefon üzerinden bize ulaşabilirsiniz.",
+    popupPlaceholderName: "Adınız Soyadınız",
+    popupPlaceholderEmail: "E-posta Adresiniz",
+    popupPlaceholderPhone: "Telefon Numaranız",
+    popupPlaceholderMessage: "Mesajınız veya Proje Detayları",
+    popupSelectService: "İlgilendiğiniz Hizmet",
+    popupSelectServicePlaceholder: "Lütfen bir hizmet seçin",
+    popupSubmitWhatsApp: "WhatsApp ile Gönder",
+    popupSubmitCall: "Telefonla Ara",
+    teamTitle: "Uzman Kadromuz",
+    teamSubtitle: "Suda Dynamics'in arkasındaki, fikirleri gerçeğe dönüştüren dinamik çekirdek kadro.",
+    footerText: "Suda Dynamics, her türlü otomasyon, entegrasyon, mobil ve web işlerinizi profesyonel standartlarda hayata geçiren yeni nesil yazılım şirketidir.",
+    footerRights: "Her Hakkı Saklıdır.",
+    toastSuccess: "Tebrikler! WhatsApp'a yönlendiriliyorsunuz.",
+    toastError: "Lütfen tüm zorunlu alanları doldurun.",
+    darkMode: "Koyu Tema",
+    lightMode: "Açık Tema",
+    
+    // Services Detail Content
+    servicesData: [
+      {
+        id: "automation",
+        icon: "Cpu",
+        title: "Endüstriyel & Süreç Otomasyonu",
+        shortDesc: "İş yükünüzü sıfıra indiren akıllı arka plan iş akışları ve süreç otomasyonları.",
+        fullDesc: "Zaman alan manuel süreçlerinizi yapay zeka ve akıllı algoritmalar ile otomatikleştiriyoruz. E-posta bildirimlerinden, veri kazımaya, ERP/CRM otomasyonlarından özel robotik süreç otomasyonlarına (RPA) kadar iş verimliliğinizi %300'e kadar artırıyoruz.",
+        techs: ["Node.js", "Python", "RPA", "Zapier", "CRON Tasks", "AI Agents"]
+      },
+      {
+        id: "integration",
+        icon: "GitMerge",
+        title: "Sistem & API Entegrasyonları",
+        shortDesc: "Farklı platformları tek çatı altında konuşturan, kesintisiz API köprüleri.",
+        fullDesc: "Kullandığınız muhasebe, ödeme yolları, e-ticaret altyapıları veya özel API'ları tek bir senkronize ağda birleştiriyoruz. Veri kayıplarını engelliyor ve sistemleriniz arasında gerçek zamanlı ve güvenli veri akışı sağlıyoruz.",
+        techs: ["REST APIs", "GraphQL", "Webhooks", "Stripe/Iyzico", "Database Sync", "OAuth 2.0"]
+      },
+      {
+        id: "mobile",
+        icon: "Smartphone",
+        title: "Mobil Uygulama Geliştirme",
+        shortDesc: "iOS ve Android cihazlarda yüksek performans sunan yenilikçi mobil uygulamalar.",
+        fullDesc: "Modern mobil teknolojilerle (React Native, Flutter) hem iOS hem de Android platformlarında akıcı, modern tasarımlı ve yüksek performanslı uygulamalar geliştiriyoruz. Kullanıcı dostu arayüz ve güçlü arka plan mimarisiyle uygulamanızı App Store & Play Store'da zirveye taşıyoruz.",
+        techs: ["React Native", "Flutter", "iOS & Android", "Firebase", "App Store & Play Store", "Push Notifications"]
+      },
+      {
+        id: "web",
+        icon: "Globe",
+        title: "Web & E-Ticaret Geliştirme",
+        shortDesc: "Göz alıcı tasarımlara sahip, SEO dostu ve ultra hızlı web projeleri.",
+        fullDesc: "Şirketinizi webde en premium şekilde temsil edecek, hızlı, arama motoru dostu (SEO) ve dinamik web siteleri üretiyoruz. Özel yönetim panelleri, e-ticaret siteleri ve etkileyici animasyonlarla donatılmış landing page (tanıtım) sayfaları geliştiriyoruz.",
+        techs: ["React.js", "Next.js", "Vite", "SEO Optimization", "Dynamic Admin Panels", "Premium CSS Animations"]
+      }
+    ],
+
+    // Team Content
+    teamData: [
+      {
+        name: "Zehra Abacı",
+        role: "Kurucu & Proje Yöneticisi",
+        bio: "Suda Dynamics'in vizyonunu belirleyen, projelerin zamanında, eksiksiz ve en yüksek kalitede teslim edilmesini sağlayan liderimiz.",
+        social: {
+          linkedin: "#",
+          github: "#"
+        }
+      },
+      {
+        name: "Gizay Duru",
+        role: "Müşteri İlişkileri & Asistan",
+        bio: "Müşterilerimiz ile geliştirici ekibimiz arasındaki en güçlü köprü. İletişim, planlama ve müşteri memnuniyetinden sorumludur.",
+        social: {
+          linkedin: "#",
+          github: "#"
+        }
+      },
+      {
+        name: "Furkan Uçar",
+        role: "Kıdemli Mobil & Web Geliştirici",
+        bio: "React Native ve modern frontend teknolojileriyle üst düzey mobil uygulamalar ve web arayüzleri inşa eden kod sihirbazı.",
+        social: {
+          linkedin: "#",
+          github: "#"
+        }
+      },
+      {
+        name: "Selahattin Sarıbay",
+        role: "Kıdemli Otomasyon & Entegrasyon Geliştirici",
+        bio: "Sistemlerin birbirleriyle mükemmel şekilde konuşmasını sağlayan API mimarı ve arka plan otomasyon uzmanı.",
+        social: {
+          linkedin: "#",
+          github: "#"
+        }
+      }
+    ]
+  },
+  en: {
+    navHome: "Home",
+    navServices: "Services",
+    navTeam: "Team",
+    navContact: "Contact Us",
+    heroTitlePrefix: "Build the Future with ",
+    heroTitleHighlight: "Suda Dynamics",
+    heroSubtitle: "We boost your business in the digital space with high-level automation, integration, mobile, and web solutions. We offer seamless code, fast integration, and eye-catching user interfaces.",
+    heroCTA1: "Contact Now",
+    heroCTA2: "Explore Services",
+    statProjects: "Successful Projects",
+    statSatisfaction: "Customer Satisfaction",
+    statUptime: "System Uptime Rate",
+    statDevelopers: "Expert Developers",
+    servicesTitle: "Our Services",
+    servicesSubtitle: "We offer custom, high-performance solutions built with modern technologies tailored to your needs.",
+    serviceDetailBtn: "See Details",
+    serviceDetailCTA: "Get a Quote for this Service",
+    popupTitle: "Get in Touch",
+    popupSubtitle: "Let's discuss your project! You can fill out the form or reach us directly via WhatsApp/Phone.",
+    popupPlaceholderName: "Your Full Name",
+    popupPlaceholderEmail: "Your Email Address",
+    popupPlaceholderPhone: "Your Phone Number",
+    popupPlaceholderMessage: "Your Message or Project Details",
+    popupSelectService: "Service of Interest",
+    popupSelectServicePlaceholder: "Please select a service",
+    popupSubmitWhatsApp: "Send via WhatsApp",
+    popupSubmitCall: "Call Directly",
+    teamTitle: "Our Expert Team",
+    teamSubtitle: "The dynamic core team behind Suda Dynamics, turning ideas into reality.",
+    footerText: "Suda Dynamics is a next-generation software agency that brings all your automation, integration, mobile, and web projects to life with professional standards.",
+    footerRights: "All Rights Reserved.",
+    toastSuccess: "Congratulations! Redirecting to WhatsApp.",
+    toastError: "Please fill in all required fields.",
+    darkMode: "Dark Mode",
+    lightMode: "Light Mode",
+
+    // Services Detail Content
+    servicesData: [
+      {
+        id: "automation",
+        icon: "Cpu",
+        title: "Industrial & Process Automation",
+        shortDesc: "Intelligent background workflows and process automations that reduce your workload to zero.",
+        fullDesc: "We automate your time-consuming manual processes using artificial intelligence and smart algorithms. From email notifications to web scraping, ERP/CRM automations, and custom Robotic Process Automation (RPA) workflows, we boost your business efficiency by up to 300%.",
+        techs: ["Node.js", "Python", "RPA", "Zapier", "CRON Tasks", "AI Agents"]
+      },
+      {
+        id: "integration",
+        icon: "GitMerge",
+        title: "System & API Integrations",
+        shortDesc: "Seamless API bridges connecting diverse platforms under one roof.",
+        fullDesc: "We unify your accounting, payment gateways, e-commerce backend, or custom APIs into a single synchronized ecosystem. We prevent data loss and ensure secure, real-time data flows across all your systems.",
+        techs: ["REST APIs", "GraphQL", "Webhooks", "Stripe/Iyzico", "Database Sync", "OAuth 2.0"]
+      },
+      {
+        id: "mobile",
+        icon: "Smartphone",
+        title: "Mobile App Development",
+        shortDesc: "Innovative mobile apps delivering high performance on iOS and Android.",
+        fullDesc: "We develop fluid, modernly designed, and high-performance apps for both iOS and Android using modern cross-platform tech (React Native, Flutter). With user-friendly UX and powerful backend systems, we launch your app to success on App Store & Play Store.",
+        techs: ["React Native", "Flutter", "iOS & Android", "Firebase", "App Store & Play Store", "Push Notifications"]
+      },
+      {
+        id: "web",
+        icon: "Globe",
+        title: "Web & E-Commerce Development",
+        shortDesc: "SEO-friendly, ultra-fast web projects with stunning modern designs.",
+        fullDesc: "We create fast, search engine optimized, and dynamic websites to represent your brand in the most premium way online. We build custom admin panels, e-commerce architectures, and landing pages packed with beautiful animations.",
+        techs: ["React.js", "Next.js", "Vite", "SEO Optimization", "Dynamic Admin Panels", "Premium CSS Animations"]
+      }
+    ],
+
+    // Team Content
+    teamData: [
+      {
+        name: "Zehra Abacı",
+        role: "Founder & Project Manager",
+        bio: "The leader defining the vision of Suda Dynamics, ensuring projects are delivered on time, complete, and with the highest quality standards.",
+        social: {
+          linkedin: "#",
+          github: "#"
+        }
+      },
+      {
+        name: "Gizay Duru",
+        role: "Client Relations & Assistant",
+        bio: "The strongest connection between our clients and development team. Responsible for communication, scheduling, and client satisfaction.",
+        social: {
+          linkedin: "#",
+          github: "#"
+        }
+      },
+      {
+        name: "Furkan Uçar",
+        role: "Senior Mobile & Web Developer",
+        bio: "A coding wizard crafting premium mobile applications and web interfaces using React Native and modern frontend architectures.",
+        social: {
+          linkedin: "#",
+          github: "#"
+        }
+      },
+      {
+        name: "Selahattin Sarıbay",
+        role: "Senior Automation & Integration Developer",
+        bio: "An API architect and background automation specialist ensuring all systems connect and speak with each other flawlessly.",
+        social: {
+          linkedin: "#",
+          github: "#"
+        }
+      }
+    ]
+  }
+};
