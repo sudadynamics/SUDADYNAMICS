@@ -20,6 +20,30 @@
   margin-top: 20px;
 }
 
+.calc-trigger-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-calc-trigger {
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  border-color: rgba(var(--accent-gold-rgb), 0.3);
+  background: rgba(var(--accent-gold-rgb), 0.05);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-calc-trigger:hover {
+  background: linear-gradient(135deg, var(--accent-gold), #b8921e);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0 15px rgba(var(--accent-gold-rgb), 0.35);
+}
+
 /* Service Card Design */
 .service-card {
   position: relative;

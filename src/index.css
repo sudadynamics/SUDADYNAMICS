@@ -315,3 +315,51 @@ section {
 .modal-overlay.active .modal-content {
   transform: scale(1) translateY(0);
 }
+
+/* Custom Cursor Follower Styles */
+.custom-cursor {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-gold);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10000;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-cursor.hovered {
+  width: 12px;
+  height: 12px;
+  background: var(--accent-purple);
+  box-shadow: 0 0 10px rgba(var(--accent-purple-rgb), 0.5);
+}
+
+.custom-cursor-follower {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--accent-purple);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.08s ease-out, width 0.3s ease, height 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-cursor-follower.hovered {
+  width: 48px;
+  height: 48px;
+  border-color: var(--accent-gold);
+  background: rgba(var(--accent-gold-rgb), 0.05);
+  box-shadow: 0 0 15px rgba(var(--accent-gold-rgb), 0.3);
+}
+
+/* Fix default cursor behavior for desktop */
+@media (min-width: 768px) {
+  body, button, a, select, textarea, input {
+    cursor: none !important;
+  }
+}
+

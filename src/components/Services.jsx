@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as Icons from 'lucide-react';
 import './Services.css';
 
-const Services = ({ t, onInquireService }) => {
+const Services = ({ t, onInquireService, onOpenCalculator }) => {
   const [activeModal, setActiveModal] = useState(null);
 
   // Render icon based on string name from translations
@@ -43,10 +43,18 @@ const Services = ({ t, onInquireService }) => {
     <section id="services" className="services-section">
       <div className="bg-decor-circle"></div>
       
-      <div className="section-header">
+      <div className="section-header animate-slide-up">
         <span className="badge">Suda Dynamics</span>
         <h2>{t.servicesTitle}</h2>
         <p>{t.servicesSubtitle}</p>
+        
+        {/* Dynamic Cost Calculator Trigger Button */}
+        <div className="calc-trigger-wrapper">
+          <button className="btn-secondary btn-calc-trigger" onClick={onOpenCalculator}>
+            <Icons.Sparkles size={16} className="sparkle-gold" />
+            <span>{t.calculatorTitle}</span>
+          </button>
+        </div>
       </div>
 
       <div className="services-grid">

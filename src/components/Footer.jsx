@@ -75,9 +75,9 @@ const Footer = ({ t, onContactClick }) => {
               </button>
             </li>
             <li>
-              <a href="mailto:info@sudadynamics.com" className="contact-info-btn email-link">
+              <a href="mailto:sudadynamics@gmail.com" className="contact-info-btn email-link">
                 <Mail size={16} className="contact-icon turquoise" />
-                <span>info@sudadynamics.com</span>
+                <span>sudadynamics@gmail.com</span>
               </a>
             </li>
           </ul>
